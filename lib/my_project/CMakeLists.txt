@@ -11,7 +11,7 @@ target_include_directories(${PROJECT_NAME}
 include(GNUInstallDirs)
 
 set(config_install_dir "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
-set(generated_dir "${PROJECT_SOURCE_DIR}/generated")
+set(generated_dir "${CMAKE_BINARY_DIR}/generated")
 # Configuration
 set(version_config "${generated_dir}/${PROJECT_NAME}ConfigVersion.cmake")
 set(project_config "${generated_dir}/${PROJECT_NAME}Config.cmake")
